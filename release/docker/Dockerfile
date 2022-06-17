@@ -10,4 +10,4 @@ RUN mkdir -p /app
 WORKDIR /app
 COPY --from=builder /app/jetbrains .
 EXPOSE 8999
-CMD ["./githooks", "start"]
+CMD ["./jetbrains", "start"]
